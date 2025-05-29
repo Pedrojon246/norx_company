@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NORX COMPANY - Login</title>
+    <link rel="stylesheet" href="./assets/login.css">
+</head>
+<body>
+    <div class="background"></div>
+    
+    <!-- Partículas -->
+    <div class="particles" id="particles"></div>
+    
+    <!-- Container principal -->
+    <div class="container">
+        <div class="login-card">
+            <div class="logo">NORX</div>
+            <div class="tagline">Forex • Investments • Technology</div>
+            
+            <form id="loginForm">
+                <div class="form-group">
+                    <input type="email" class="form-input" placeholder="📧 Seu e-mail" required>
+                </div>
+                
+                <div class="form-group">
+                    <input type="password" class="form-input" placeholder="🔒 Sua senha" required>
+                </div>
+                
+                <button type="submit" class="login-btn">
+                    Acessar Plataforma
+                </button>
+            </form>
+            
+            <div class="links">
+                <a href="#register" class="link">Criar conta</a>
+                <a href="#forgot" class="link">Esqueci minha senha</a>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Animação ÉPICA de sucesso -->
+    <div class="success-animation" id="successAnimation">
+        <!-- Vela verde que explode -->
+        <div class="mega-candle">
+            <div class="candle-wick"></div>
+        </div>
+        
+        <!-- Explosão circular épica -->
+        <div class="explosion-ring"></div>
+        
+        <!-- Expansão estilo Netflix -->
+        <div class="netflix-expansion"></div>
+        
+        <!-- Chuva de moedas -->
+        <div class="money-rain" id="moneyRain"></div>
+        
+        <!-- Textos de sucesso -->
+        <div class="success-text">LOGIN REALIZADO!</div>
+        <div class="success-subtext">💰 Bem-vindo ao futuro dos investimentos!</div>
+    </div>
+    
+    <!-- Market Ticker -->
+    <div class="market-ticker">
+        <div class="ticker-content">
+            <div class="ticker-item">
+                <span class="ticker-symbol">EUR/USD</span>
+                <span class="ticker-price up">1.0875</span>
+                <span>+0.12%</span>
+            </div>
+            <div class="ticker-item">
+                <span class="ticker-symbol">GBP/USD</span>
+                <span class="ticker-price down">1.2654</span>
+                <span>-0.08%</span>
+            </div>
+            <div class="ticker-item">
+                <span class="ticker-symbol">USD/JPY</span>
+                <span class="ticker-price up">156.45</span>
+                <span>+0.25%</span>
+            </div>
+            <div class="ticker-item">
+                <span class="ticker-symbol">AUD/USD</span>
+                <span class="ticker-price up">0.6789</span>
+                <span>+0.15%</span>
+            </div>
+            <div class="ticker-item">
+                <span class="ticker-symbol">USD/CAD</span>
+                <span class="ticker-price down">1.3456</span>
+                <span>-0.05%</span>
+            </div>
+            <div class="ticker-item">
+                <span class="ticker-symbol">BTC/USD</span>
+                <span class="ticker-price up">67,890</span>
+                <span>+2.45%</span>
+            </div>
+            <div class="ticker-item">
+                <span class="ticker-symbol">ETH/USD</span>
+                <span class="ticker-price up">3,456</span>
+                <span>+1.87%</span>
+            </div>
+            <div class="ticker-item">
+                <span class="ticker-symbol">NORX/USD</span>
+                <span class="ticker-price" style="color: #D4AF37;">$0.0004</span>
+                <span style="color: #D4AF37;">LANÇAMENTO 10/06</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Audio para efeitos sonoros -->
+    <div class="audio-controls">
+        <audio id="cashSound" preload="auto">
+            <source src="data:audio/wav;base64,UklGRnoGAABXQVZFZm10IBAAAAABAAEAQB8AAEAfAAABAAgAZGF0YQoGAACBhYqFbF1fdJivrJBhNjVgodDbq2EcBj+a2/LDciUFLIHO8tiJNwgZaLvt559NEAxQp+PwtmMcBjiR1/LMeSwFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEcBja..." type="audio/wav">
+        </audio>
+        <audio id="coinSound" preload="auto">
+            <source src="data:audio/wav;base64,UklGRiQEAABXQVZFZm10IBAAAAABAAEARKwAAIhYAQACABAAZGF0YQAEAACBhYqFbF1fdJivrJBhNjVgodDbq2EcBj+a2/LDciUFLIHO8tiJNwgZaLvt559NEAxQp+PwtmMcBjiR1/LMeSwFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEcBjaLzPLVeSsFJG/A7+GUBA==" type="audio/wav">
+        </audio>
+    </div>
+
+    <script src="./assets/login.js"></script>
+</body>
+</html>

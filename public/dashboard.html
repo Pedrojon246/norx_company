@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NORX COMPANY - Dashboard</title>
+    <link rel="stylesheet" href="./assets/dashboard.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-container">
+            <div class="logo">NORX COMPANY</div>
+            <nav class="nav-menu">
+                <a href="#" class="nav-link active">Dashboard</a>
+                <a href="#services" class="nav-link">Serviços</a>
+                <a href="#norxcoin" class="nav-link">NORXCOIN</a>
+                <a href="#" class="nav-link">Suporte</a>
+            </nav>
+            <div class="user-info">
+                <span>Bem-vindo, Trader!</span>
+                <div class="user-avatar">NT</div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">NORX COMPANY</h1>
+            <p class="hero-subtitle">Sua jornada no mercado Forex começa aqui. Tecnologia, expertise e resultados comprovados.</p>
+            
+            <div class="hero-stats">
+                <div class="stat-card">
+                    <div class="stat-number">86.7%</div>
+                    <div class="stat-label">Taxa de Acerto</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">$169.82</div>
+                    <div class="stat-label">Lucro Acumulado</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">1.2K+</div>
+                    <div class="stat-label">Clientes Ativos</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">24/7</div>
+                    <div class="stat-label">Suporte</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cotações em Tempo Real -->
+    <section class="market-section">
+        <div class="container">
+            <h2 class="section-title">📈 Cotações em Tempo Real</h2>
+            
+            <div class="market-ticker">
+                <div class="ticker-scroll" id="tickerScroll">
+                    <div class="ticker-item">
+                        <span class="ticker-symbol">EUR/USD</span>
+                        <span class="ticker-price" id="eurusd">1.0875</span>
+                        <span class="ticker-change positive">+0.12%</span>
+                    </div>
+                    <div class="ticker-item">
+                        <span class="ticker-symbol">GBP/USD</span>
+                        <span class="ticker-price" id="gbpusd">1.2654</span>
+                        <span class="ticker-change negative">-0.08%</span>
+                    </div>
+                    <div class="ticker-item">
+                        <span class="ticker-symbol">USD/JPY</span>
+                        <span class="ticker-price" id="usdjpy">156.45</span>
+                        <span class="ticker-change positive">+0.25%</span>
+                    </div>
+                    <div class="ticker-item">
+                        <span class="ticker-symbol">AUD/USD</span>
+                        <span class="ticker-price" id="audusd">0.6789</span>
+                        <span class="ticker-change positive">+0.15%</span>
+                    </div>
+                    <div class="ticker-item">
+                        <span class="ticker-symbol">USD/CAD</span>
+                        <span class="ticker-price" id="usdcad">1.3456</span>
+                        <span class="ticker-change negative">-0.05%</span>
+                    </div>
+                    <div class="ticker-item">
+                        <span class="ticker-symbol">USD/CHF</span>
+                        <span class="ticker-price" id="usdchf">0.8891</span>
+                        <span class="ticker-change positive">+0.18%</span>
+                    </div>
+                    <div class="ticker-item">
+                        <span class="ticker-symbol">BTC/USD</span>
+                        <span class="ticker-price" id="btcusd">67,890</span>
+                        <span class="ticker-change positive">+2.45%</span>
+                    </div>
+                    <div class="ticker-item">
+                        <span class="ticker-symbol">ETH/USD</span>
+                        <span class="ticker-price" id="ethusd">3,456</span>
+                        <span class="ticker-change positive">+1.87%</span>
+                    </div>
+                    <div class="ticker-item">
+                        <span class="ticker-symbol">NORX/USD</span>
+                        <span class="ticker-price" style="color: #D4AF37;">$0.0004</span>
+                        <span class="ticker-change" style="color: #D4AF37; background: rgba(212, 175, 55, 0.1);">LANÇAMENTO 10/06</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Serviços -->
+    <section class="services-section" id="services">
+        <div class="container">
+            <h2 class="section-title">🎯 Nossos Serviços</h2>
+            
+            <div class="services-grid">
+                <!-- Sala de Sinais -->
+                <div class="service-card">
+                    <div class="service-content">
+                        <div class="service-icon">📈</div>
+                        <h3 class="service-title">Sala de Sinais Forex</h3>
+                        <p class="service-description">
+                            Receba sinais profissionais em tempo real com nossa taxa de acerto de 86.7%. 
+                            Análises técnicas precisas e estratégias comprovadas para maximizar seus lucros.
+                        </p>
+                        <div class="pricing-grid">
+                            <div class="price-option">
+                                <div class="price-period">Mensal</div>
+                                <div class="price-value">$16</div>
+                            </div>
+                            <div class="price-option">
+                                <div class="price-period">Trimestral</div>
+                                <div class="price-value">$42</div>
+                            </div>
+                            <div class="price-option">
+                                <div class="price-period">Anual</div>
+                                <div class="price-value">$144</div>
+                            </div>
+                        </div>
+                        <button class="cta-button" onclick="openPaymentModal('signals')">Assinar Agora</button>
+                    </div>
+                </div>
+
+                <!-- Robô Oficial -->
+                <div class="service-card">
+                    <div class="service-content">
+                        <div class="service-icon">🤖</div>
+                        <h3 class="service-title">Licença do Robô Oficial</h3>
+                        <p class="service-description">
+                            Automatize suas operações com nosso robô exclusivo. Algoritmos avançados 
+                            que operam 24/7 seguindo nossas estratégias vencedoras.
+                        </p>
+                        <div class="pricing-grid">
+                            <div class="price-option">
+                                <div class="price-period">Mensal</div>
+                                <div class="price-value">$36</div>
+                            </div>
+                            <div class="price-option">
+                                <div class="price-period">Trimestral</div>
+                                <div class="price-value">$96</div>
+                            </div>
+                            <div class="price-option">
+                                <div class="price-period">Anual</div>
+                                <div class="price-value">$324</div>
+                            </div>
+                            <div class="price-option">
+                                <div class="price-period">Vitalício</div>
+                                <div class="price-value">$999</div>
+                            </div>
+                        </div>
+                        <button class="cta-button" onclick="openPaymentModal('robot')">Licenciar Robô</button>
+                    </div>
+                </div>
+
+                <!-- Mesas Proprietárias -->
+                <div class="service-card">
+                    <div class="service-content">
+                        <div class="service-icon">🏦</div>
+                        <h3 class="service-title">Aluguel de Mesas Proprietárias</h3>
+                        <p class="service-description">
+                            Acesso exclusivo a mesas prop trading já aprovadas. Opere com capital 
+                            profissional e maximize seus ganhos sem riscos pessoais.
+                        </p>
+                        <div class="pricing-grid">
+                            <div class="price-option">
+                                <div class="price-period">Mensal</div>
+                                <div class="price-value">$390</div>
+                            </div>
+                            <div class="price-option">
+                                <div class="price-period">Trimestral</div>
+                                <div class="price-value">$1.050</div>
+                            </div>
+                            <div class="price-option">
+                                <div class="price-period">Anual</div>
+                                <div class="price-value">$3.900</div>
+                            </div>
+                        </div>
+                        <button class="cta-button" onclick="openPaymentModal('prop')">Alugar Mesa</button>
+                    </div>
+                </div>
+
+                <!-- Norx Group Investments -->
+                <div class="service-card">
+                    <div class="service-content">
+                        <div class="service-icon">💼</div>
+                        <h3 class="service-title">Norx Group Investments</h3>
+                        <p class="service-description">
+                            Oportunidade exclusiva para poucos. Invista no capital da empresa e 
+                            receba participação nos lucros. Aporte mínimo R$ 5.000.
+                        </p>
+                        <div class="pricing-grid">
+                            <div class="price-option">
+                                <div class="price-period">Mínimo</div>
+                                <div class="price-value">R$ 5K</div>
+                            </div>
+                            <div class="price-option">
+                                <div class="price-period">Recomendado</div>
+                                <div class="price-value">R$ 25K</div>
+                            </div>
+                            <div class="price-option">
+                                <div class="price-period">Premium</div>
+                                <div class="price-value">R$ 50K+</div>
+                            </div>
+                        </div>
+                        <button class="cta-button" onclick="openPaymentModal('investments')">Investir Agora</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- NORXCOIN Destaque -->
+    <section class="norxcoin-section" id="norxcoin">
+        <div class="container">
+            <div class="norxcoin-content">
+                <h2 class="norxcoin-title">🪙 NORXCOIN</h2>
+                <p class="norxcoin-subtitle">O token utilitário que revoluciona o ecossistema Norx Company</p>
+                
+                <div class="norxcoin-features">
+                    <div class="feature-card">
+                        <div class="feature-icon">💰</div>
+                        <h3 class="feature-title">Descontos Exclusivos</h3>
+                        <p>Use NORX e economize até 37% em todos os nossos serviços</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🚀</div>
+                        <h3 class="feature-title">Lançamento 10/06</h3>
+                        <p>Preço inicial de $0.0004 - Seja um dos primeiros investidores</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🎁</div>
+                        <h3 class="feature-title">Airdrop Ativo</h3>
+                        <p>Participe da nossa comunidade no Telegram e ganhe tokens grátis</p>
+                    </div>
+                </div>
+                
+                <button class="norxcoin-cta">
+                    Descobrir NORXCOIN
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Norx Company</h3>
+                    <a href="#" class="footer-link">Sobre Nós</a>
+                    <a href="#" class="footer-link">Nossa Equipe</a>
+                    <a href="#" class="footer-link">Resultados</a>
+                    <a href="#" class="footer-link">Certificações</a>
+                </div>
+                <div class="footer-section">
+                    <h3>Serviços</h3>
+                    <a href="#" class="footer-link">Sala de Sinais</a>
+                    <a href="#" class="footer-link">Robô Oficial</a>
+                    <a href="#" class="footer-link">Mesas Prop</a>
+                    <a href="#" class="footer-link">Investments</a>
+                </div>
+                <div class="footer-section">
+                    <h3>NORXCOIN</h3>
+                    <a href="#" class="footer-link">Whitepaper</a>
+                    <a href="#" class="footer-link">Tokenomics</a>
+                    <a href="#" class="footer-link">Roadmap</a>
+                    <a href="#" class="footer-link">Comunidade</a>
+                </div>
+                <div class="footer-section">
+                    <h3>Suporte</h3>
+                    <a href="mailto:support@norxcompany.com.br" class="footer-link">support@norxcompany.com.br</a>
+                    <a href="https://wa.me/5522997547731" class="footer-link" target="_blank">WhatsApp: (22) 99754-7731</a>
+                    <a href="https://t.me/norxcompanyoficial" class="footer-link" target="_blank">Telegram Oficial</a>
+                    <a href="#" class="footer-link">Central de Ajuda</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025

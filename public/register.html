@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NORX COMPANY - Cadastro</title>
+    <link rel="stylesheet" href="./assets/register.css">
+    link
+</head>
+<body>
+    <div class="background"></div>
+    
+    <!-- Partículas -->
+    <div class="particles" id="particles"></div>
+    
+    <!-- Container principal -->
+    <div class="container">
+        <div class="register-card">
+            <div class="logo">NORX</div>
+            <div class="tagline">Forex • Investments • Technology</div>
+            <div class="subtitle">Criar Conta</div>
+            
+            <form id="registerForm">
+                <div class="form-row">
+                    <div class="form-group">
+                        <input type="text" class="form-input" name="firstName" placeholder="👤 Nome" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-input" name="lastName" placeholder="👤 Sobrenome" required>
+                    </div>
+                </div>
+                
+                <div class="form-group full-width">
+                    <input type="email" class="form-input" name="email" placeholder="📧 E-mail" required>
+                </div>
+                
+                <div class="form-row">
+                    <div class="form-group">
+                        <input type="tel" class="form-input" name="phone" placeholder="📱 WhatsApp" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-input" name="cpf" placeholder="🆔 CPF" required>
+                    </div>
+                </div>
+                
+                <div class="form-row">
+                    <div class="form-group">
+                        <input type="password" class="form-input" name="password" placeholder="🔒 Senha" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="password" class="form-input" name="confirmPassword" placeholder="🔒 Confirmar Senha" required>
+                    </div>
+                </div>
+                
+                <div class="form-group full-width">
+                    <select class="form-select" name="interest" required>
+                        <option value="">💼 Principal interesse</option>
+                        <option value="signals">Sala de Sinais Forex</option>
+                        <option value="robot">Robô de Trading</option>
+                        <option value="prop">Mesas Proprietárias</option>
+                        <option value="investments">Norx Group Investments</option>
+                        <option value="norxcoin">NORXCOIN</option>
+                        <option value="all">Todos os serviços</option>
+                    </select>
+                </div>
+                
+                <div class="checkbox-group">
+                    <div class="custom-checkbox" id="termsCheckbox"></div>
+                    <label class="checkbox-label">
+                        Aceito os <a href="#terms" target="_blank">Termos de Uso</a> e 
+                        <a href="#privacy" target="_blank">Política de Privacidade</a> da NORX Company
+                    </label>
+                </div>
+                
+                <div class="checkbox-group">
+                    <div class="custom-checkbox" id="marketingCheckbox"></div>
+                    <label class="checkbox-label">
+                        Desejo receber novidades e ofertas exclusivas por email e WhatsApp
+                    </label>
+                </div>
+                
+                <button type="submit" class="register-btn" id="submitBtn" disabled>
+                    Criar Minha Conta
+                </button>
+            </form>
+            
+            <div class="links">
+                <span style="color: #ccc;">Já tem uma conta? </span>
+                <a href="login.html" class="link">Fazer Login</a>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Modal de sucesso -->
+    <div class="success-modal" id="successModal">
+        <div class="success-content">
+            <div class="success-icon">🎉</div>
+            <div class="success-title">Conta Criada com Sucesso!</div>
+            <div class="success-message">
+                Bem-vindo à NORX Company! Sua conta foi criada e você já pode fazer login.
+                <br><br>
+                <strong>E-mail de confirmação enviado!</strong>
+            </div>
+            <button class="success-btn" onclick="redirectToLogin()">Fazer Login</button>
+        </div>
+    </div>
+    <script src="./assets/register.js"></script>
+</body>
+</html>

@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NORX COMPANY - Painel Administrativo</title>
+    <link rel="stylesheet" href="./assets/painel_adm.css">
+    
+</head>
+<body>
+    <!-- Sidebar -->
+    <div class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+            <div class="admin-logo">NORX ADMIN</div>
+            <div class="admin-subtitle">Painel de Controle</div>
+        </div>
+        
+        <nav class="sidebar-menu">
+            <a href="#dashboard" class="menu-item active" data-section="dashboard">
+                <span class="menu-icon">📊</span>
+                <span class="menu-text">Dashboard</span>
+            </a>
+            
+            <a href="#users" class="menu-item" data-section="users">
+                <span class="menu-icon">👥</span>
+                <span class="menu-text">Usuários</span>
+                <span class="menu-badge" id="newUsersCount">12</span>
+            </a>
+            
+            <a href="#payments" class="menu-item" data-section="payments">
+                <span class="menu-icon">💰</span>
+                <span class="menu-text">Pagamentos</span>
+                <span class="menu-badge" id="pendingPayments">3</span>
+            </a>
+            
+            <a href="#services" class="menu-item" data-section="services">
+                <span class="menu-icon">🎯</span>
+                <span class="menu-text">Serviços</span>
+            </a>
+            
+            <a href="#norxcoin" class="menu-item" data-section="norxcoin">
+                <span class="menu-icon">🪙</span>
+                <span class="menu-text">NORXCOIN</span>
+            </a>
+            
+            <a href="#analytics" class="menu-item" data-section="analytics">
+                <span class="menu-icon">📈</span>
+                <span class="menu-text">Analytics</span>
+            </a>
+            
+            <a href="#settings" class="menu-item" data-section="settings">
+                <span class="menu-icon">⚙️</span>
+                <span class="menu-text">Configurações</span>
+            </a>
+            
+            <a href="#support" class="menu-item" data-section="support">
+                <span class="menu-icon">🎧</span>
+                <span class="menu-text">Suporte</span>
+                <span class="menu-badge" id="supportTickets">7</span>
+            </a>
+        </nav>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <div class="top-bar">
+            <h1 class="page-title" id="pageTitle">Dashboard</h1>
+            <div class="admin-info">
+                <span>Admin NORX</span>
+                <div class="admin-avatar">NX</div>
+            </div>
+        </div>
+
+        <div class="content-area" id="contentArea">
+            <!-- Dashboard Section -->
+            <div class="section-content" id="dashboard-content">
+                <!-- Quick Actions -->
+                <div class="quick-actions">
+                    <a href="#users" class="quick-action" data-section="users">
+                        <div class="quick-action-icon">👤</div>
+                        <div class="quick-action-title">Novo Usuário</div>
+                        <div class="quick-action-desc">Cadastrar cliente manualmente</div>
+                    </a>
+                    
+                    <a href="#payments" class="quick-action" data-section="payments">
+                        <div class="quick-action-icon">✅</div>
+                        <div class="quick-action-title">Confirmar Pagamentos</div>
+                        <div class="quick-action-desc">3 pagamentos pendentes</div>
+                    </a>
+                    
+                    <a href="#settings" class="quick-action" data-section="settings">
+                        <div class="quick-action-icon">📧</div>
+                        <div class="quick-action-title">Enviar Newsletter</div>
+                        <div class="quick-action-desc">Comunicar com todos os clientes</div>
+                    </a>
+                </div>
+
+                <!-- Stats Cards -->
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-icon">👥</div>
+                        <div class="stat-number">247</div>
+                        <div class="stat-label">Usuários Totais</div>
+                        <div class="stat-change positive">+12 esta semana</div>
+                    </div>
+                    
+                    <div class="stat-card">
+                        <div class="stat-icon">💰</div>
+                        <div class="stat-number">$8,950</div>
+                        <div class="stat-label">Receita Mensal</div>
+                        <div class="stat-change positive">+23% vs mês anterior</div>
+                    </div>
+                    
+                    <div class="stat-card">
+                        <div class="stat-icon">📈</div>
+                        <div class="stat-number">89.2%</div>
+                        <div class="stat-label">Taxa de Conversão</div>
+                        <div class="stat-change positive">+5.3% esta semana</div>
+                    </div>
+                    
+                    <div class="stat-card">
+                        <div class="stat-icon">🎯</div>
+                        <div class="stat-number">156</div>
+                        <div class="stat-label">Assinantes Ativos</div>
+                        <div class="stat-change positive">+8 hoje</div>
+                    </div>
+                </div>
+
+                <!-- Charts -->
+                <div class="chart-container">
+                    <h3 class="section-title">📊 Vendas dos Últimos 30 Dias</h3>
+                    <div class="chart-placeholder">
+                        Gráfico de Vendas - Integração com Chart.js em desenvolvimento
+                    </div>
+                </div>
+
+                <!-- Recent Activity -->
+                <div class="data-section">
+                    <div class="section-header">
+                        <h3 class="section-title">🔄 Atividade Recente</h3>
+                        <button class="action-btn">Ver Todas</button>
+                    </div>
+                    
+                    <table class="data-table">
+                        <thead>
+                            <tr>
+                                <th>Usuário</th>
+                                <th>Ação</th>
+                                <th>Valor</th>
+                                <th>Status</th>
+                                <th>Data</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>João Silva</td>
+                                <td>Assinatura Sala de Sinais</td>
+                                <td>$16.00</td>
+                                <td><span class="status-badge status-active">Ativo</span></td>
+                                <td>Hoje, 14:30</td>
+                            </tr>
+                            <tr>
+                                <td>Maria Santos</td>
+                                <td>Pagamento PIX</td>
+                                <td>R$ 85.00</td>
+                                <td><span class="status-badge status-pending">Pendente</span></td>
+                                <td>Hoje, 13:15</td>
+                            </tr>
+                            <tr>
+                                <td>Carlos Oliveira</td>
+                                <td>Cadastro Novo</td>
+                                <td>-</td>
+                                <td><span class="status-badge status-active">Completo</span></td>
+                                <td>Hoje, 12:45</td>
+                            </tr>
+                            <tr>
+                                <td>Ana Costa</td>
+                                <td>Robô Vitalício</td>
+                                <td>$999.00</td>
+                                <td><span class="status-badge status-active">Pago</span></td>
+                                <td>Ontem, 16:20</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Users Section -->
+            <div class="section-content" id="users-content" style="display: none;">
+                <div class="filters-bar">
+                    <input type="text" class="search-input" placeholder="🔍 Buscar usuário..." id="userSearch">
+                    <select class="filter-select" id="statusFilter">
+                        <option value="">Todos os Status</option>
+                        <option value="active">Ativos</option>
+                        <option value="pending">Pendentes</option>
+                        <option value="blocked">Bloqueados</option>
+                    </select>
+                    <select class="filter-select" id="serviceFilter">
+                        <option value="">Todos os Serviços</option>
+                        <option value="signals">Sala de Sinais</option>
+                        <option value="robot">Robô</option>
+                        <option value="prop">Mesas Prop</option>
+                        <option value="investments">Investments</option>
+                    </select>
+                </div>
+
+                <div class="data-section">
+                    <div class="section-header">
+                        <h3 class="section-title">👥 Gestão de Usuários</h3>
+                        <button class="action-btn">+ Novo Usuário</button>
+                    </div>
+                    
+                    <table class="data-table">
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Nome</th>
+                                <th>Email</th>
+                                <th>WhatsApp</th>
+                                <th>Serviços</th>
+                                <th>Status</th>
+                                <th>Cadastro</th>
+                                <th>Ações</th>
+                            </tr>
+                        </thead>
+                        <tbody id="usersTableBody">
+                            <tr>
+                                <td>#001</td>
+                                <td>João Silva</td>
+                                <td>joao@email.com</td>
+                                <td>(21) 99999-9999</td>
+                                <td>Sinais, Robô</td>
+                                <td><span class="status-badge status-active">Ativo</span></td>
+                                <td>20/05/2025</td>
+                                <td>
+                                    <button class="action-btn" style="padding: 8px 12px; font-size: 12px;">Editar</button>
+                                </td>
+                            </tr>
+                            <!-- Mais usuários serão carregados via JavaScript -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Payments Section -->
+            <div class="section-content" id="payments-content" style="display: none;">
+                <div class="filters-bar">
+                    <input type="text" class="search-input" placeholder="🔍 Buscar pagamento..." id="paymentSearch">
+                    <select class="filter-select" id="paymentStatusFilter">
+                        <option value="">Todos os Status</option>
+                        <option value="pending">Pendentes</option>
+                        <option value="confirmed">Confirmados</option>
+                        <option value="failed">Falharam</option>
+                    </select>
+                    <select class="filter-select" id="paymentMethodFilter">
+                        <option value="">Todos os Métodos</option>
+                        <option value="pix">PIX</option>
+                        <option value="usdt">USDT</option>
+                        <option value="norx">NORXCOIN</option>
+                    </select>
+                </div>
+
+                <div class="data-section">
+                    <div class="section-header">
+                        <h3 class="section-title">💰 Controle de Pagamentos</h3>
+                        <button class="action-btn">Exportar Relatório</button>
+                    </div>
+                    
+                    <table class="data-table">
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Usuário</th>
+                                <th>Serviço</th>
+                                <th>Método</th>
+                                <th>Valor</th>
+                                <th>Status</th>
+                                <th>Data</th>
+                                <th>Ações</th>
+                            </tr>
+                        </thead>
+                        <tbody id="paymentsTableBody">
+                            <tr>
+                                <td>#PAY001</td>
+                                <td>Maria Santos</td>
+                                <td>Sala de Sinais - Mensal</td>
+                                <td>PIX</td>
+                                <td>R$ 85.00</td>
+                                <td><span class="status-badge status-pending">Pendente</span></td>
+                                <td>Hoje, 13:15</td>
+                                <td>
+                                    <button class="action-btn" style="padding: 8px 12px; font-size: 12px;" onclick="confirmPayment('PAY001')">Confirmar</button>
+                                </td>
+                            </tr>
+                            <!-- Mais pagamentos serão carregados via JavaScript -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Outras seções serão carregadas dinamicamente -->
+            <div class="section-content" id="loading-content" style="display: none;">
+                <div class="loading">Carregando dados...</div>
+            </div>
+        </div>
+    </div>
+
+<script src="./assets/painel_adm.js"></script>
+</body>
+</html>
