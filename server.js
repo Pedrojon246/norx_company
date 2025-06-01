@@ -1,6 +1,7 @@
 // server.js - NORX COMPANY Main Server
-const authRoutes = require('./route/auth');
-const adminRoutes = require('./route/admin');
+const authRoutes = require('./routes/auth');
+const adminRoutes = require('./routes/admin');
+const userRoutes = require('./routes/users')
 const express = require('express');
 const cors = require('cors');
 const path = require('path');
@@ -46,7 +47,6 @@ app.use(express.urlencoded({ extended: true }));
 
 // Static files
 app.use(express.static('public'));
-
 // Routes
 app.use('/api/auth', authRoutes);
 app.use('/api/admin', adminRoutes);
